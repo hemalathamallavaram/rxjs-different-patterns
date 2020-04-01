@@ -4,7 +4,7 @@ import { Conversation } from './models';
 
 @Component({
   selector: 'app-conversations',
-  templateUrl: './conversations.component.html',
+  template: '',
   encapsulation: ViewEncapsulation.None
 })
 export class ConversationsComponent{
