@@ -1,0 +1,16 @@
+.test{
+  border:1px solid red;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+div,button{
+  margin:10px;
+  padding:10px;
+}
+

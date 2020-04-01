@@ -1,0 +1,39 @@
+  <div class="container">
+    <div class="row">
+      <div class="col-6 offset-3">
+        <div class="card">
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="receiverEmail">Receiver Email</label>
+                <input [(ngModel)]="receiverEmail" type="text" class="form-control" id="receiverEmail" aria-describedby="ReceiverHelp">
+                <small id="ReceiverHelp" class="form-text text-muted">Please enter email of the receiver</small>
+              </div>
+              <div class="form-group">
+                <label for="content">Content</label>
+                <input [(ngModel)]="message" type="text" class="form-control" id="conent">
+              </div>
+              <button (click)="sendMessage()" type="submit" class="btn btn-primary">Send Message Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 offset-3">
+        <div class="card">
+          <div class="card-body">
+            <div *ngFor="let conv of conversations">
+              <ul>
+                <li>
+                  <div>{{conv.sender}}</div><button (click)="removeConversation(conv.id)"></button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
